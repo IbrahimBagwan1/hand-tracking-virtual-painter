@@ -8,9 +8,12 @@ A real-time **AI-based virtual painting app** using **hand tracking** and **gest
 
 ## 🖼️ Demo
 
+![Virtual Painter Demo](assets/demo.gif)
+
+*Above: Real-time hand-tracking and painting using gestures.*
+
 ![Demo Screenshot](demo-screenshot.png)
 
-*Add a short video or GIF for a better showcase!*
 
 ---
 
@@ -65,15 +68,6 @@ python painter.py
 
 ---
 
-## 🖼️ Screenshots
-
-| Drawing | Color Selector | Erasing |
-| ------- | ------------- | ------- |
-| ![](screenshots/drawing.png) | ![](screenshots/color-selector.png) | ![](screenshots/erasing.png) |
-
-*Add your own screenshots to the `screenshots/` folder!*
-
----
 
 ## 📚 Topics
 
