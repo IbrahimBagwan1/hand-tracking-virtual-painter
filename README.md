@@ -8,14 +8,14 @@ A real-time **AI-powered virtual painting** app that lets you draw on your scree
 
 ## 🖼️ Screenshots
 
-![UI – Color & Eraser Panel](assets/ui/img1.png)  
-*Select your brush color or switch to eraser by hovering with two fingers.*
+![UI – Color & Eraser Panel](assets/ui/image1.png)  
 
-![UI – Drawing Mode](assets/ui/img2.png)  
-*Raise your index finger to start drawing on the canvas.*
 
-![UI – Eraser Mode](assets/ui/img3.png)  
-*Make the thumb + pinky gesture to erase unwanted strokes.*
+![UI – Drawing Mode](assets/ui/image2.png)  
+
+
+![UI – Eraser Mode](assets/ui/image3.png)  
+
 
 ---
 
