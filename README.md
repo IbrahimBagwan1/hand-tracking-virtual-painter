@@ -1,89 +1,136 @@
-# under Development 
 # Hand Tracking Virtual Painter 🎨✋
 
-> ⭐ If you find this project useful, please consider giving it a star!
+![Drawing Demo](assets/ui/vid.gif)
 
-A real-time **AI-based virtual painting app** using **hand tracking** and **gesture recognition**. Draw on your screen with just your **hand and a webcam**—no mouse or stylus required!
+A real-time **AI-powered virtual painting** app that lets you draw on your screen using just your hand and a webcam—no mouse or stylus required! Built with OpenCV and MediaPipe for fast, accurate hand tracking and gesture recognition.
 
 ---
 
-## 🖼️ Demo
+## 🖼️ Screenshots
 
-![Virtual Painter Demo](assets/demo.gif)
+![UI – Color & Eraser Panel](assets/ui/img1.png)  
+*Select your brush color or switch to eraser by hovering with two fingers.*
 
-*Above: Real-time hand-tracking and painting using gestures.*
+![UI – Drawing Mode](assets/ui/img2.png)  
+*Raise your index finger to start drawing on the canvas.*
 
-![Demo Screenshot](demo-screenshot.png)
-
+![UI – Eraser Mode](assets/ui/img3.png)  
+*Make the thumb + pinky gesture to erase unwanted strokes.*
 
 ---
 
 ## 🚀 Features
 
-- ✋ Real-time hand tracking
-- 🖌️ Draw using finger movement
-- 🧠 AI-powered gesture recognition
-- 🎨 Select colors with gestures
-- 🧼 Eraser mode
-- 📷 Works with any webcam
+- **Real-time Hand Tracking**  
+  MediaPipe’s hand landmark model enables precise fingertip detection and tracking.
+- **Gesture-Based Controls**  
+  - **Index Finger Up:** Draw on the canvas.
+  - **Index + Middle Fingers Up:** Open color selection panel; hover to pick a color.
+  - **Thumb + Pinky:** Switch to eraser mode.
+- **Customizable Tools**  
+  Adjust brush thickness and eraser size for detailed work.
+- **Multi-Color Palette**  
+  Instantly switch colors by hovering over the palette region.
+- **Cross-Platform**  
+  Works with any standard webcam on Windows, macOS, or Linux.
 
 ---
 
-## 🧰 Technologies Used
+## 🧰 Tech Stack
 
-- Python 🐍
-- OpenCV
-- MediaPipe
-- NumPy
+- **Python 3.7+**
+- **OpenCV** – Video capture, image processing, UI overlays
+- **MediaPipe** – Hand landmark detection, gesture recognition
+- **NumPy** – Efficient image matrix operations
 
 ---
 
 ## 📦 Installation
 
-```bash
-git clone https://github.com/IbrahimBagwan1/hand-tracking-virtual-painter.git
-cd hand-tracking-virtual-painter
-pip install -r requirements.txt
-```
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/IbrahimBagwan1/hand-tracking-virtual-painter.git
+   cd hand-tracking-virtual-painter
+   ```
+
+2. **(Optional) Create & activate a virtual environment**
+   ```bash
+   python -m venv venv
+   # Windows
+   venv\Scripts\activate
+   # macOS / Linux
+   source venv/bin/activate
+   ```
+
+3. **Install dependencies**
+   ```bash
+   pip install -r requirements.txt
+   ```
 
 ---
 
 ## ▶️ Usage
 
-Make sure your webcam is connected, then run:
+1. Connect your webcam.
+2. Run the painter script:
+   ```bash
+   python app_virtual_painter.py
+   ```
+3. Start drawing!
 
-```bash
-python painter.py
-```
+**Controls:**
+- **Drawing Mode:** Raise index finger
+- **Color Selection:** Raise index + middle fingers, hover over a color in the top bar
+- **Eraser Mode:** Make thumb + pinky gesture
+- **Quit:** Press `x` at any time
 
 ---
 
 ## 🎯 How It Works
 
-- Uses MediaPipe to track hand landmarks in real time.
-- Detects finger gestures for:
-  - **Drawing:** Index finger up
-  - **Color selection:** Index + middle finger up
-  - **Erasing:** Thumb + pinky gestures
-- Tracks finger movement and paints on a virtual canvas.
+- **Hand Landmark Detection:**  
+  MediaPipe locates 21 hand landmarks in each video frame.
+- **Gesture Recognition:**  
+  - Drawing: Only index fingertip above its PIP joint
+  - Selection: Both index and middle fingertips up
+  - Eraser: Thumb and pinky fingertips up together
+- **Canvas Overlay:**  
+  Drawing strokes are accumulated on a transparent canvas and overlaid on the live video feed using OpenCV.
 
 ---
 
+## 🔍 SEO & Discoverability
 
-## 📚 Topics
-
-`ai` • `opencv` • `mediapipe` • `hand-tracking` • `gesture-recognition` • `virtual-painter` • `python` • `drawing-app` • `real-time`
+**Keywords:** Hand Tracking, Virtual Painter, Gesture Recognition, OpenCV, MediaPipe, Python Drawing App, Real-time AI Drawing  
+**Description:** Create stunning drawings with just your hand—no stylus or tablet needed. Leverage AI-driven hand tracking for an intuitive, marker-free digital painting experience.
 
 ---
 
 ## 🛡️ License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+Distributed under the MIT License. See [LICENSE](LICENSE) for details.
 
 ---
 
-## 🙌 Contribution
+## 🙌 Contributing
 
-Pull requests are welcome! For major changes, please open an issue first to discuss what you would like to change.
+Contributions are welcome! To report bugs or propose enhancements:
+
+1. Fork this repository
+2. Create a new branch (`git checkout -b feature/my-feature`)
+3. Commit your changes (`git commit -m "Add my feature"`)
+4. Push to the branch (`git push origin feature/my-feature`)
+5. Open a Pull Request
+
+Please ensure all new code is well-documented and tested.
 
 ---
+
+## 📬 Contact
+
+Created by **Ibrahim Bagwan**  
+Questions or feedback? Reach out via [GitHub Issues](https://github.com/IbrahimBagwan1/hand-tracking-virtual-painter/issues) 
+
+---
+
+Enjoy painting with your hands! 🎨✋

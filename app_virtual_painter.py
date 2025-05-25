@@ -49,7 +49,7 @@ while True:
 
     # 4. Selection Mode : if two fingers up
     if fingers[1] and fingers[2]:
-      print("Selection Mode")
+      # print("Selection Mode")
       if(y1<124):
         if 250<x1<450:
           header = overLayList[0]
@@ -70,7 +70,7 @@ while True:
     if fingers[1]==True and fingers[2]==False:
       xp,yp =0,0
       cv2.circle(img, (x1,y1), 20, colourList, -1)
-      print("Drawing Mode")
+      # print("Drawing Mode")
       if xp==0 and yp==0:
         xp,yp = x1,y1
 
@@ -90,11 +90,9 @@ while True:
   img = cv2.bitwise_or(img, imgCanvas)
 
 
-
   img[0:124, 0:1280] = header
   cv2.imshow("image",img)
-  cv2.imshow("Canvas",imgCanvas)
+  # cv2.imshow("Canvas",imgCanvas)
 
   if cv2.waitKey(1) & 0xFF==ord('x'):
     break
-
