@@ -9,7 +9,6 @@ mpDraw= mp.solutions.drawing_utils
 
 cap = cv2.VideoCapture(0)
 pTime =0
-cTime =0
 
 while True:
   success, img = cap.read()
@@ -38,9 +37,3 @@ while True:
   cv2.imshow("Image", img)
   if cv2.waitKey(1) & 0xFF==ord('x'):
     break
-
-def main():
-  pass
-
-if __name__ == "__main__":
-  main()
