@@ -10,7 +10,7 @@ myList = os.listdir(folderPath)
 
 overLayList= []
 colourList = (255,0,255)
-brushThickness = 15
+brushThickness = 25
 eraserThickness = 75
 xp,yp =0,0
 
