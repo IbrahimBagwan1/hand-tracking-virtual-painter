@@ -8,12 +8,13 @@ A real-time **AI-powered virtual painting** app that lets you draw on your scree
 
 ## 🖼️ Screenshots
 
+### Selecting Color
 ![UI – Color & Eraser Panel](assets/ui/image1.png)  
 
-
+### Drawing with Painter
 ![UI – Drawing Mode](assets/ui/image2.png)  
 
-
+### Erasing Strokes
 ![UI – Eraser Mode](assets/ui/image3.png)  
 
 
