@@ -52,6 +52,8 @@ class handDetector():
     return lmList
 
 
+  def fingersUp(self):
+    pass
   
 def main():
   cap = cv2.VideoCapture(0)
