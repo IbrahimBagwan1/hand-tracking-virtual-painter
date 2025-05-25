@@ -95,4 +95,4 @@ while True:
   # cv2.imshow("Canvas",imgCanvas)
 
   if cv2.waitKey(1) & 0xFF==ord('x'):
-    break
+    break 
